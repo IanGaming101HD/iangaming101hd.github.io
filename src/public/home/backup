@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang='en-GB'>
+
+<head>
+    <title>Reaper Ian - Home</title>
+    <link rel='icon' href='test.gif' type='image/gif'>
+    <meta charset='UTF-8'>
+    <meta name='author' content='IanGaming101HD'>
+    <meta name='application-name' content='Reaper Ian'>
+    <meta name='author' content='Reaper Ian'>
+    <meta name='description'
+        content='This is a wesbite made by a youtuber, Reaper Ian, which can be used to play HTML5/Flash Games, gives resources to do with Anime, his own Official Minecraft Server, and both his Official Discord Server and his Discord Bot. Find out more about this below, feel free to donate using Paypal :)'>
+    <meta name='keywords'
+        content='Games, HTML5, Flash, Anime, List, Top, 10, Top 10, Website, Websites, Minecraft, Server, Discord, Paypal, Donations'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel='stylesheet' type='text/css' href='./public/home/style.css'>
+</head>
+
+<body>
+    <div class='container'>
+        <div class='section_1'>
+            <div class='nav'>
+                <link rel='icon' href='test.gif' type='image/gif'>
+                <ul class='navigation'>
+                    <li class='navigation_items'><a href='../home/index.html'>Home</a></li>
+                    <li class='navigation_items'><a href='../games/index.html'>Games</a></li>
+                    <li class='navigation_items'><a href='../anime/index.html'>Anime</a></li>
+                    <li class='navigation_items'><a href='../minecraft/index.html'>Minecraft</a></li>
+                    <li class='navigation_items'><a
+                            href='../redirect/index.html?redirect_uri=https://discord.gg/bob'>Discord</a></li>
+                    <li class='navigation_items'><a
+                            href='../redirect/index.html?redirect_uri=https://paypal.me/iangaming101hd'>Donate</a></li>
+                </ul>
+            </div>
+            <h1 class='header centre'>Homepage</h1>
+            <p class='short_desc centre'>Made by Reaper Ian on YT!</p>
+            <div class='centre'>
+                <button class='buttons' id='button1' onclick="window.location.href = '';">Subcribe</button>
+                <button class='buttons' id='button2' onclick="window.location.href = '';">See features</button>
+            </div>
+        </div>
+        <div class='section_2'>
+            <h2 class='centre' id='fact'>1k+ Subcribers on Youtube and 500+ Followers on Tiktok</h2>
+        </div>
+        <div class='section_3'>
+            <div class='topic left'>
+                <h2 class='subheader'>What is this website about?</h2>
+                <div class='subheader-content'>
+                    <p class='caption'>This is a wesbite made by a youtuber, Reaper Ian, which can be used to play HTML5/Flash Games, gives resources to do with Anime, his own Official Minecraft Server, and both his Official Discord Server and his Discord Bot. Find out more about this below, feel free to donate using Paypal :)</p>
+                    <!-- <p class='caption'>This is a wesbite made by a youtuber, Reaper Ian, which can be used to play HTML5/Flash Games, gives resources to do with Anime, his own Official Minecraft Server, and both his Official Discord Server and his Discord Bot. Find out more about this below, feel free to donate using Paypal :)</p> -->
+                    <img class='left-image' src='https://toppng.com/uploads/preview/red-question-mark-png-11552242986dielb7cmf4.png' width="100" height="100">
+                </div>
+            </div>
+            <div class='topic right'>
+                <h2 class='subheader'>Games</h2>
+                <div class='subheader-content'>
+                    <img class='left-image' src='https://toppng.com/uploads/preview/red-question-mark-png-11552242986dielb7cmf4.png' width="100" height="100">
+                    <p class='caption'>This is a wesbite made by a youtuber, Reaper Ian, which can be used to play HTML5/Flash Games, gives resources to do with Anime, his own Official Minecraft Server, and both his Official Discord Server and his Discord Bot. Find out more about this below, feel free to donate using Paypal :)</p>
+                </div>
+            </div>
+            <div class='topic left'>
+                <div class='subheader-content'>
+                    <h2 class='subheader'>Anime</h2>
+                    <p class='caption'>caption_here</p>
+                    <img class='left-image' src='https://toppng.com/uploads/preview/red-question-mark-png-11552242986dielb7cmf4.png' width="100" height="100">
+                </div>
+            </div>
+            <div class='topic right'>
+                <div class='subheader-content'>
+                    <h2 class='subheader'>Minecraft</h2>
+                    <img class='left-image' src='https://toppng.com/uploads/preview/red-question-mark-png-11552242986dielb7cmf4.png' width="100" height="100">
+                    <p class='caption'>caption_here</p>
+                </div>
+            </div>
+            <div class='topic left'>
+                <div class='subheader-content'>
+                    <h2 class='subheader'>Discord</h2>
+                    <p class='caption'>caption_here</p>
+                    <img class='left-image' src='https://toppng.com/uploads/preview/red-question-mark-png-11552242986dielb7cmf4.png' width="100" height="100">
+                </div>
+            </div>
+            <div class='topic right'>
+                <div class='subheader-content'>
+                    <h2 class='subheader'>Donate</h2>
+                    <img class='left-image' src='https://toppng.com/uploads/preview/red-question-mark-png-11552242986dielb7cmf4.png' width="100" height="100">
+                    <p class='caption'>caption_here</p>
+                </div>
+            </div>
+            <div class='section_4'>
+                <h3 class='footer_header'>About Us</h3>
+                <ul>
+                    <li><a href='#tos'>Terms of Service</a></li>
+                    <li><a href='#guidlines'>Community Guidelines</a></li>
+                </ul>
+                <h3 class='footer_header'>Contact Us</h3>
+                <ul>
+                    <li><a href='#support'>Support</a></li>
+                    <li><a href='#contact'>Contact</a></li>
+                </ul>
+                <h3 class='footer_header'>Social Media</h3>
+                <ul>
+                    <li><a href='#youtube'>Youtube</a></li>
+                    <li><a href='#instagram'>Instagram</a></li>
+                    <li><a href='#twitter'>Twitter</a></li>
+                    <li><a href='#paypal'>Paypal</a></li>
+                    <li><a href='#streamlabs'>Streamlabs</a></li>
+                </ul>
+            </div>
+            <p>Copyright 2022 - All Rights Reserved</p>
+        </div>
+</body>
+
+</html>
