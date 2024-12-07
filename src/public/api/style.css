@@ -61,14 +61,14 @@ img {
     overflow: hidden;
 }
 
-.navigation_items {
+.navigation-items {
     font-family: Arial;
     font-size: 20px;
     margin-top: 10px;
     float: left;
 }
 
-.navigation_items a {
+.navigation-items a {
     display: block;
     color: gray;
     text-align: center;
@@ -76,6 +76,6 @@ img {
     text-decoration: none;
 }
 
-.navigation_items a:hover {
+.navigation-items a:hover {
     color: #ffffff;
 }

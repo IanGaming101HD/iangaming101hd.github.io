@@ -1,0 +1,42 @@
+html {
+    font-family: sans-serif;
+}
+
+.subheader {
+    margin-top: -1%;
+    font-size: 40px;
+    margin-bottom: 1%;
+}
+
+.caption {
+    font-size: 18px;
+    width: 60%;
+}
+
+.image {
+    height: 350px;
+}
+
+.topic {
+    display: flex;
+    margin-bottom: 5%;
+    justify-content: space-between;
+    /* justify-content:baseline; */
+    /* align-items: baseline; */
+}
+
+.flex-part1 {
+    margin-left: 5%;
+}
+
+.flex-part2 {
+    margin-right: 5%;
+    float: right;
+    clear: right;
+}
+
+.horizontally-align {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+}

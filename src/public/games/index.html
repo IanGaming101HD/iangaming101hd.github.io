@@ -1,115 +1,61 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang='en-GB'>
 
 <head>
-    <title>Top 10 Anime List</title>
-    <link rel='icon' href='data:image/png;base64,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'>
-    <link rel='stylesheet' href='./public/home/style.css'>
+    <title>Games</title>
+    <!-- <link rel='icon' href='test.gif' type='image/gif'> -->
+    <meta charset='UTF-8'>
+    <meta name='author' content='IanGaming101HD'>
+    <meta name='application-name' content='Reaper Ian'>
+    <meta name='author' content='Reaper Ian'>
+    <meta name='description'
+        content='This is a wesbite made by a youtuber, Reaper Ian, which can be used to play HTML5/Flash Games, gives resources to do with Anime, his own Official Minecraft Server, and both his Official Discord Server and his Discord Bot. Find out more about this below, feel free to donate using Paypal :)'>
+    <meta name='keywords'
+        content='Games, HTML5, Flash, Anime, List, Top, 10, Top 10, Website, Websites, Minecraft, Server, Discord, Paypal, Donations'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel='stylesheet' type='text/css' href='./public/home/style.css'>
 </head>
 
 <body>
-    <div class='nav'>
-        <link rel='icon' href='test.gif' type='image/gif'>
-        <ul class='navigation'>
-            <li class='navigation_items'><a href='../home/index.html'>Home</a></li>
-            <li class='navigation_items'><a href='../games/index.html'>Games</a></li>
-            <li class='navigation_items'><a href='../anime/index.html'>Anime</a></li>
-            <li class='navigation_items'><a href='../minecraft/index.html'>Minecraft</a></li>
-            <li class='navigation_items'><a href='../redirect/index.html?redirect_uri=https://discord.gg/bob'>Discord</a></li>
-            <li class='navigation_items'><a href='../redirect/index.html?redirect_uri=https://paypal.me/iangaming101hd'>Donate</a></li>
-        </ul>
-    </div>
-
-    <h1>Top 10 Best Anime Of All-Time.</h1>
-    <img src='https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e1f72ba0-a2b3-4808-a2f9-4691377a83be/deres58-105de261-17bc-4655-8b4d-084a30dee4fc.png/v1/fill/w_1280,h_720,q_80,strp/anime_world_by_saiyanking02_deres58-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6IlwvZlwvZTFmNzJiYTAtYTJiMy00ODA4LWEyZjktNDY5MTM3N2E4M2JlXC9kZXJlczU4LTEwNWRlMjYxLTE3YmMtNDY1NS04YjRkLTA4NGEzMGRlZTRmYy5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.Nb0IPAc1IivMjzUCtyo9RsN-wnlEjN84oOX6MuBjJwI'
-        width='770' height='433'>
-        <p class='about'><b>This is my Top 10 Anime List and it may offend people who thinks I am completely wrong and that is fine.</b></p>
-    <h2>What is Anime?</h2>
-    <img src='https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e1f72ba0-a2b3-4808-a2f9-4691377a83be/deres58-105de261-17bc-4655-8b4d-084a30dee4fc.png/v1/fill/w_1280,h_720,q_80,strp/anime_world_by_saiyanking02_deres58-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6IlwvZlwvZTFmNzJiYTAtYTJiMy00ODA4LWEyZjktNDY5MTM3N2E4M2JlXC9kZXJlczU4LTEwNWRlMjYxLTE3YmMtNDY1NS04YjRkLTA4NGEzMGRlZTRmYy5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.Nb0IPAc1IivMjzUCtyo9RsN-wnlEjN84oOX6MuBjJwI'
-        width='770' height='433'>
-            <p>Anime is hand-drawn and computer animation originating from Japan. In Japan and in Japanese, anime
-                describes all animated works, regardless of style or origin. However, outside of Japan and in English,
-                anime is colloquial for Japanese animation and refers specifically to animation produced in Japan.</p>
-            <h3>10. My Hero Academia</h3>
-            <img src='https://img1.hulu.com/user/v3/artwork/b4859a95-39ba-4051-a550-256c42e70a1d?base_image_bucket_name=image_manager&base_image=2d0d3308-9323-4716-b7d8-03f171c844af&size=1200x630&format=jpeg'
-                alt='My_Hero_Academia.png' width='770' height='433'>
-            <p>My Hero Academia is a Japanese superhero manga series written and illustrated by Kōhei Horikoshi. The
-                story
-                follows Izuku Midoriya, a boy born without superpowers in a world where they have become commonplace,
-                but who
-                still dreams of becoming a superhero himself.</p>
-            <h3>9. Demon Slayer</h3>
-            <img src='https://www.cartonionline.com/wordpress/wp-content/uploads/2021/03/demon-slayer.jpg'
-                alt='Demon_Slayer.png' width='770' height='433'>
-            <p>Demon Slayer: Kimetsu no Yaiba is a Japanese manga series written and illustrated by Koyoharu Gotouge. It
-                follows
-                teenage Tanjiro Kamado, who strives to become a demon slayer after his family was slaughtered and his
-                younger
-                sister Nezuko turned into a demon.</p>
-            <h3>8. Attack On Titan</h3>
-            <img src='https://i.pinimg.com/originals/7a/0d/c2/7a0dc24f568b81a39ba1ce797f65d355.jpg'
-                alt='Attack_On_Titan.png' width='770' height='433'>
-            <p>Attack on Titan (Japanese: 進撃の巨人, Hepburn: Shingeki no Kyojin, lit. "The Advancing Giants") is a Japanese
-                manga
-                series written and illustrated by Hajime Isayama. It is set in a world where humanity lives inside
-                cities
-                surrounded by three enormous walls that protect them from the gigantic man-eating humanoids referred to
-                as
-                Titans; the story follows Eren Yeager, who vows to exterminate the Titans after a Titan brings about the
-                destruction of his hometown and the death of his mother. Attack on Titan was serialized in Kodansha's
-                monthly
-                shōnen manga magazine Bessatsu Shōnen Magazine from September 2009 to April 2021, with its chapters
-                collected in
-                34 tankōbon volumes.</p>
-            <h3>7. Dragon Ball</h3>
-            <img src='https://cdn.vox-cdn.com/thumbor/nwvCgEEsVPtb4fUpoQ2bys6DMYc=/0x0:1600x959/1200x800/filters:focal(670x165:926x421)/cdn.vox-cdn.com/uploads/chorus_image/image/69260607/FunFilms_DBSBroly_Landing.0.jpg'
-                alt='Dragon_Ball.png' width='770' height='433'>
-            <p>Dragon Ball follows the adventures of Goku who, along with the Z Warriors, defends the Earth against
-                evil. The
-                action adventures are entertaining and reinforce the concept of good versus evil. "Dragon Ball Z"
-                teaches
-                valuable character virtues such as teamwork, loyalty, and trustworthiness.</p>
-            <h3>6. One Piece</h3>
-            <img src='https://cdn.vox-cdn.com/thumbor/7TzXXGeyMRbOjKE7UDiNXOHlQK0=/0x0:1280x738/1200x800/filters:focal(538x267:742x471)/cdn.vox-cdn.com/uploads/chorus_image/image/65232906/one_piece.0.png'
-                alt='One_Piece.png' width='770' height='433'>
-            <p>The series focuses on Monkey D. Luffy, a young man made of rubber, whom, inspired by his childhood idol,
-                the
-                powerful pirate "Red Haired" Shanks, sets off on a journey from the East Blue Sea to find the mythical
-                treasure,
-                the One Piece, and proclaim himself the King of the Pirates.</p>
-            <h3>5. Death Note</h3>
-            <img src='https://static0.cbrimages.com/wordpress/wp-content/uploads/2021/11/death-note-light.jpg'
-                alt='Death_Note.png' width='770' height='433'>
-            <p>The story follows Light Yagami, a teen genius who discovers a mysterious notebook: the "Death Note",
-                which
-                belonged to the Shinigami Ryuk, and grants the user the supernatural ability to kill anyone whose name
-                is
-                written in its pages.</p>
-            <h3>4. Bleach</h3>
-            <img src='https://www.looper.com/img/gallery/bleach-the-final-arc-release-date-cast-and-plot-what-we-know-so-far/intro-1622391716.jpg'
-                alt='Bleach.png' width='770' height='433'>
-            <p>The story follows the adventures of Ichigo Kurosaki after he obtains the powers of a Soul Reaper—a death
-                personification similar to the Grim Reaper—from another Soul Reaper, Rukia Kuchiki.</p>
-            <h3>3. Fairy Tail</h3>
-            <img src='https://sportshub.cbsistatic.com/i/2021/09/11/b1b50802-b4b7-41fa-a1d4-e22136c9aeb7/fairy-tail.jpg'
-                alt='Fairy_Tail.png' width='770' height='433'>
-            <p>Fairy Tail is a Japanese manga series written and illustrated by Hiro Mashima. ... The story follows the
-                adventures of Natsu Dragneel, a member of the popular wizard guild Fairy Tail, as he searches the
-                fictional
-                world of Earth-land for the dragon Igneel.</p>
-            <h3>2. Jojo's Bizarre Adventures</h3>
-            <img src='https://cdn.vox-cdn.com/thumbor/jmBolFgEFC3FxIXXIR3x3Ez0K8Y=/0x38:1200x638/fit-in/1200x600/cdn.vox-cdn.com/uploads/chorus_asset/file/23055216/26162_Jo_Jo_s_Bizarre_Adventure_Stardust_Crusaders.jpg'
-                alt='Jojos_Bizarre_Adventures.png' width='770' height='433'>
-            <p>JoJo's Bizarre Adventure tells the story of the Joestar family, a family whose various members discover
-                they are
-                destined to take down supernatural foes using powers that they possess.</p>
-            <h3>1. Naruto</h3>
-            <img src='https://wallpapercave.com/wp/wc1710734.png' alt='Naruto.png' width='770' height='433'>
-            <p>Naruto (Japanese: NARUTO ナルト ) is a Japanese manga series written and illustrated by Masashi Kishimoto.
-                It tells
-                the story of Naruto Uzumaki, a young ninja who seeks recognition from his peers and dreams of becoming
-                the
-                Hokage, the leader of his village.</p>
+    <div class='container'>
+        <div class='section-1'>
+            <div class='nav'>
+                <!-- <link rel='icon' href='test.gif' type='image/gif'> -->
+                <ul class='navigation'>
+                    <li class='navigation-items'><a href='../'>Home</a></li>
+                    <li class='navigation-items'><a href='../games'>Games</a></li>
+                    <li class='navigation-items'><a href='../anime'>Anime</a></li>
+                    <li class='navigation-items'><a href='../minecraft'>Minecraft</a></li>
+                    <li class='navigation-items'><a href='../dashboard'>Dashboard</a></li>
+                    <li class='navigation-items'><a href='../redirect?url=https://discord.gg/bob'>Discord</a></li>
+                    <li class='navigation-items'><a href='../redirect?url=https://paypal.me/iangaming101hd'>Donate</a>
+                    </li>
+                </ul>
+            </div>
+            <h1 class='header centre'>Games</h1>
+            <div></div>
+            <div class='section-4'>
+                <h3 class='footer-header'>About Us</h3>
+                <ul>
+                    <li><a href='#tos'>Terms of Service</a></li>
+                    <li><a href='#guidlines'>Community Guidelines</a></li>
+                </ul>
+                <h3 class='footer-header'>Contact Us</h3>
+                <ul>
+                    <li><a href='#support'>Support</a></li>
+                    <li><a href='#contact'>Contact</a></li>
+                </ul>
+                <h3 class='footer-header'>Social Media</h3>
+                <ul>
+                    <li><a href='#youtube'>Youtube</a></li>
+                    <li><a href='#instagram'>Instagram</a></li>
+                    <li><a href='#twitter'>Twitter</a></li>
+                    <li><a href='#paypal'>Paypal</a></li>
+                    <li><a href='#streamlabs'>Streamlabs</a></li>
+                </ul>
+            </div>
+            <p>Copyright 2022 - All Rights Reserved</p>
+        </div>
 </body>
 
 </html>

@@ -4,9 +4,8 @@
     box-sizing: border-box;
 }
 
-.section_1 {
+body {
     background-color: #272934;
-    height: 550px;
 }
 
 .nav {
@@ -16,28 +15,33 @@
 
 .navigation {
     list-style-type: none;
-    margin-left: 750px;
+    margin-right: 1%;
+    float: right;
     padding: 0;
     overflow: hidden;
 }
 
-.navigation_items {
+.navigation-items {
     font-family: Arial;
     font-size: 20px;
-    margin-top: 10px;
+    margin-top: 1%;
     float: left;
 }
 
-.navigation_items a {
+.navigation-items a {
     display: block;
-    color: #808080;
-    text-align: center;
+    color: gray;
     padding: 14px 16px;
     text-decoration: none;
 }
 
-.navigation_items a:hover {
+.navigation-items a:hover {
     color: #ffffff;
+}
+
+.section-1 {
+    background-color: #272934;
+    height: 1000px;
 }
 
 a:after {
