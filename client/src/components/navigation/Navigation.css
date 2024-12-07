@@ -1,0 +1,50 @@
+.navigation {
+    margin-left: auto;
+    margin-right: 1rem;
+    padding: 1rem;
+}
+
+.navigation ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    background: none;
+    border: none;
+    font: inherit;
+    padding: 0;
+}
+
+.navigation button {
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.2s linear;
+}
+
+.navigation button::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 1.5rem;
+    width: 0;
+    height: 0.15rem;
+    background: var(--colour);
+    transition: width 0.2s linear;
+}
+
+.navigation button:hover::after,
+.navigation .current_page::after {
+    width: 100%;
+}
+
+.navigation button:hover,
+.navigation .current_page {
+    color: var(--colour);
+}

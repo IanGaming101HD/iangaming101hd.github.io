@@ -2,7 +2,6 @@ const express = require('express');
 const fs = require('fs');
 
 let app = express();
-let port = 80;
 
 app.enable('trust proxy');
 app.set('etag', false);
@@ -33,9 +32,29 @@ app.get('/:page', (req, res, next) => {
   res.send(file);
 });
 
-app.listen(port, () => {
-  console.log(`http://localhost:${port}/`);
-  console.log(`App listening on port ${port}`);
-});
-
 // require('./discord-bot/main.js');
+
+
+const express = require('express');
+const cors = require('cors');
+const userRoutes = require('./routes/userRoutes');
+const postRoutes = require('./routes/postRoutes');
+
+// Reference
+
+// const app = express();
+
+// // Middleware
+// app.use(cors()); // Enable CORS for cross-origin requests
+// app.use(express.json()); // Parse JSON bodies in requests
+
+// // Routes
+// app.use('/api/users', userRoutes);
+// app.use('/api/posts', postRoutes);
+
+// // Default route for 404
+// app.use((req, res, next) => {
+//   res.status(404).json({ message: 'Route not found' });
+// });
+
+module.exports = app;
